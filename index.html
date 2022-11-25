@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Filter image in JS</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="trau-gac-bep.jpg" height="500" alt="image">
+        </div>
+
+        <div class="handle-color">
+            <div class="item-effect">
+                <label>Blur</label>
+                <input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="blur" data-scale="px"><br>
+            </div>
+
+            <div class="item-effect">
+                <label>Brightness</label>
+                <input type="range" min="0" max="200" value="100" step="1" onchange="applyFilter()" data-filter="brightness" data-scale="%"><br>
+            </div>
+
+            <div class="item-effect">
+                <label>Contrast</label>
+                <input type="range" min="0" max="200" value="100" step="1" onchange="applyFilter()" data-filter="contrast" data-scale="%"><br>
+            </div>
+
+            <div class="item-effect">
+                <label>Grayscale</label>
+                <input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="grayscale" data-scale="%"><br>
+            </div>
+
+            <div class="item-effect">
+                <label>Hue Rotate</label>
+                <input type="range" min="0" max="360" value="0" step="1" onchange="applyFilter()" data-filter="hue-rotate" data-scale="deg"><br>
+            </div>
+
+            <div class="item-effect">
+                <label>Invert</label>
+                <input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="invert" data-scale="%"><br>
+            </div>
+
+            <div class="item-effect">
+                <label>Opacity</label>
+                <input type="range" min="0" max="100" value="100" step="1" onchange="applyFilter()" data-filter="opacity" data-scale="%"><br>
+            </div>
+
+            <div class="item-effect">
+                <label>Saturate</label>
+                <input type="range" min="1" max="100" value="0" step="1" onchange="applyFilter()" data-filter="saturate" data-scale=""><br>
+
+            </div>
+            <div class="item-effect">
+                <label>Sepia</label>
+                <input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="sepia" data-scale="%"><br>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

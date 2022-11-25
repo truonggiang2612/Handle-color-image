@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+.handle-color {
+    width: 500px;
+    height: 400px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+}
+.item-effect {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+.item-effect label {
+    font-size: 20px;
+    margin-right: auto;
+}
+.item-effect input {
+    width: 200px;
+}
